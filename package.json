@@ -1,0 +1,32 @@
+{
+  "name": "audio-converter",
+  "version": "1.0.0",
+  "description": "Audion format converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./test/test.js",
+    "codeTest": "node ./test/code_test.js"
+  },
+  "keywords": [
+    "audio",
+    "converter",
+    "format",
+    "conversion"
+  ],
+  "author": "Mohit Rajput",
+  "dependencies": {
+    "atob": "^2.1.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-repository"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/your-repository/issues"
+  },
+  "license": "MIT",
+  "documentation": "README.md"
+}
