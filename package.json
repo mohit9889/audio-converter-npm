@@ -53,7 +53,7 @@
     "url": "https://github.com/mohit9889/audio-converter-npm/issues"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@mohit9889"
+    "registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "documentation": "README.md"
