@@ -58,11 +58,12 @@ async function convertAndSaveAudio(
  * @returns {Buffer} The Blob object representing the audio data.
  */
 function getBlobFromBase64Data(base64Data, sliceSize = 512) {
-  // const byteCharacters = decodeBase64(base64Data);
+  const byteCharacters = decodeBase64(base64Data);
   const byteArrays = [];
 
   for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
     const slice = byteCharacters.slice(offset, offset + sliceSize);
+
     const byteNumbers = new Array(slice.length);
 
     for (let i = 0; i < slice.length; i++) {
