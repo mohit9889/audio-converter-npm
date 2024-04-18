@@ -1,4 +1,4 @@
-# audio-converter
+# light-audio-converter
 
 ## Description
 
@@ -29,13 +29,13 @@ The audio-converter package supports the following audio format conversions:
 You can install the audio-converter package via npm:
 
 ```bash
-npm install audio-converter
+npm install light-audio-converter
 ```
 
 ## Usage in Node.js
 
 ```js
-const { convertAndSaveAudio } = require("audio-converter");
+const { convertAndSaveAudio } = require("light-audio-converter");
 
 const audioFilePath = "path/to/input/audio.aac";
 const targetFormat = "mp3";
@@ -55,7 +55,7 @@ convertAndSaveAudio(audioFilePath, targetFormat, outputFilePath)
 
 ```js
 import React, { useState } from "react";
-import { convertAndSaveAudio } from "audio-converter";
+import { convertAndSaveAudio } from "light-audio-converter";
 
 function AudioConverterComponent() {
   const [audioFile, setAudioFile] = useState(null);

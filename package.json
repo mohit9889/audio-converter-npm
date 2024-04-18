@@ -1,5 +1,5 @@
 {
-  "name": "audio-converter",
+  "name": "light-audio-converter",
   "version": "1.0.0",
   "description": "Audion format converter",
   "main": "index.js",
