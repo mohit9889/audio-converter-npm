@@ -11,7 +11,15 @@
     "audio",
     "converter",
     "format",
-    "conversion"
+    "conversion",
+    "MP3",
+    "WAV",
+    "AAC",
+    "OGG",
+    "FLAC",
+    "AIFF",
+    "WMA",
+    "M4A"
   ],
   "author": "Mohit Rajput",
   "dependencies": {

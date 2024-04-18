@@ -2,7 +2,7 @@
 
 ## Description
 
-audio-converter is a Node.js package that provides functionality to convert audio files from one format to another. It simplifies the process of converting audio files by providing a simple and intuitive API.
+light-audio-converter is a Node.js package that provides functionality to convert audio files from one format to another. It simplifies the process of converting audio files by providing a simple and intuitive API.
 
 ## Features
 
