@@ -78,6 +78,3 @@ function getBlobFromBase64Data(base64Data, sliceSize = 512) {
 }
 
 module.exports = { convertAndSaveAudio };
-
-
-

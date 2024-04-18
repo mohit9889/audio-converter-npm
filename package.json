@@ -23,14 +23,15 @@
   ],
   "author": "Mohit Rajput",
   "dependencies": {
-    "atob": "^2.1.2"
+    "atob": "^2.1.2",
+    "husky": "^9.0.11"
   },
   "husky": {
     "hooks": {
       "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
       "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
-        "post-applypatch": "echo \"[Husky] post-applypatch\"",
-        "pre-commit": "echo \"[Husky] pre-commit\""
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
     }
   },
   "lint-staged": {
@@ -44,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "husky": "^9.0.11",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.2"
   },
