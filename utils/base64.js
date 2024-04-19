@@ -1,5 +1,3 @@
-const { atob } = require("atob");
-
 /**
  * Decodes base64 data to byte characters.
  * @param {string} base64Data - Base64-encoded data.
@@ -28,7 +26,6 @@ function atobToBinaryString(base64Data) {
     .map((char) => String.fromCharCode(char.charCodeAt(0)))
     .join("");
   return binaryString;
-  return atob(base64Data);
 }
 
 module.exports = { decodeBase64 };
