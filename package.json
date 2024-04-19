@@ -1,7 +1,7 @@
 {
   "name": "light-audio-converter",
   "version": "1.0.0",
-  "description": "Audion format converter",
+  "description": "Audio format converter",
   "main": "index.js",
   "scripts": {
     "test": "jest ./test/test.js",
@@ -51,9 +51,6 @@
   },
   "bugs": {
     "url": "https://github.com/mohit9889/audio-converter-npm/issues"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/mohit9889"
   },
   "license": "MIT",
   "documentation": "README.md"
