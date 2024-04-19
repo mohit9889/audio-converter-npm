@@ -24,3 +24,6 @@ yarn-error.log*
 
 # Compiled output (if applicable)
 /dist/
+
+# Test Audio file
+test/sample.aac
