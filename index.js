@@ -11,7 +11,8 @@ const { readFile, writeFile } = require("./utils/fs-utils");
 async function convertAndSaveAudio(
   audioFileData,
   targetFormat,
-  outputFilePath
+  outputFilePath,
+  onProgress
 ) {
   try {
     // Ensure lowercase target format
@@ -24,7 +25,13 @@ async function convertAndSaveAudio(
       // Client-side (browser environment)
       const reader = new FileReader();
 
-      return new Promise((resolve) => {
+      return new Promise((resolve, reject) => {
+        reader.onprogress = function (event) {
+          if (event.lengthComputable) {
+            const progress = (event.loaded / event.total) * 100;
+            onProgress(progress); // Report progress to the provided callback
+          }
+        };
         reader.onload = function (event) {
           // Splitting base64 data
           const data = event.target.result.split(",");
@@ -44,6 +51,9 @@ async function convertAndSaveAudio(
             data: blobUrl,
             contentType,
           });
+        };
+        reader.onerror = function (error) {
+          reject(error);
         };
         reader.readAsDataURL(audioFileData);
       });
