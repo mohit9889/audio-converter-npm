@@ -24,7 +24,7 @@ async function convertAndSaveAudio(
       // Client-side (browser environment)
       const reader = new FileReader();
 
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
         reader.onload = function (event) {
           // Splitting base64 data
           const data = event.target.result.split(",");
